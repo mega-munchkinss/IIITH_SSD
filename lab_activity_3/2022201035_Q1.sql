@@ -1,0 +1,1 @@
+select distinct CONCAT(Fname,' ',Minit,' ',Lname) as "Full Name",Ssn as ssn,Dno as "Dept Id",Dname as "Dept Name"  from EMPLOYEE e1 inner join DEPARTMENT d1 on e1.Ssn=d1.Mgr_ssn join WORKS_ON w1 on w1.Essn=e1.Ssn  where Hours <40.0;

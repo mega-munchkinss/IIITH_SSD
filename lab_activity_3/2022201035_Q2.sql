@@ -1,0 +1,1 @@
+select concat(e1.Fname,' ',e1.Minit,' ',e1.Lname) as "Full Name",e1.ssn,e1.Dno as "Dept Id",count(*) as "No of employees" from EMPLOYEE e1 inner join EMPLOYEE e2 on e1.Ssn=e2.Super_ssn group by e1.Ssn order by count(*);

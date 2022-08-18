@@ -1,0 +1,1 @@
+select dp.Essn as "Manager Ssn",max(d.Dnumber) as "Dept Id",count(*) as "Number of Dependents" from DEPARTMENT d join DEPENDENT dp on d.Mgr_ssn=dp.essn where d.Dnumber in (select Dnumber from DEPT_LOCATIONS group by Dnumber having count(*)>1) group by dp.Essn;

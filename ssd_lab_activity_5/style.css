@@ -1,0 +1,220 @@
+
+h1{
+    font-family: Arial;
+
+    position: relative;
+    text-align: center;
+    margin: 100px auto ;
+    color: #008080;
+}
+table{
+    padding: 8px;
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    
+
+}
+.record_table{
+
+    width: 900px;
+    font-family: Arial;
+ 
+}
+.record_table td{
+    width: 50%;
+    padding: 8px;
+    border: 1px solid black;
+}
+.record_table th{
+    padding-top: 12px;
+    padding: 8px;
+    border: 1px solid black;
+  padding-bottom: 12px;
+  background-color: lavender;
+  color: teal;
+ 
+}
+.record_table th{
+    padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  
+}
+.record_table tr:nth-child(even) {
+    background-color: lightblue;
+    border: 1px solid black;
+}
+.record_table tr:nth-child(odd) {
+    background-color: lightpink;
+    border: 1px solid black;
+}
+
+.login-page {
+    border-radius: 25px;
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.student-page {
+    font-family: Arial;
+
+    border-radius: 25px;
+    width: 60%;
+    padding: 8% 0 0;
+    margin: auto;
+  }
+.students-record-form{
+    border-radius: 25px;
+position: relative;
+font-family: Arial;
+
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 100%;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.student-form {
+    font-family: Arial;
+
+    position: relative;
+    border-radius: 25px;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 100%;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+.form {
+    font-family: Arial;
+    border-radius: 25px;
+
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+    font-family: Arial;
+    border-radius: 25px;
+
+  outline: 10px;
+  background: #f2f2f2;
+  width: 100%;
+  border: 50px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  
+}
+#username:hover{
+    border:5px solid #b217b4;
+}
+#password:hover{
+    border:5px solid #b217b4;
+}
+
+
+.form button {
+  text-transform: uppercase;
+  border-radius: 25px;
+
+  outline: 0;
+  background: #2a8b8b;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  
+}
+.form button:hover{
+    border-color: purple;
+}
+.student-det {
+    font-family: Arial;
+    border-radius: 25px;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .student-but {
+    font-family: Arial;
+    border-radius: 25px;
+    text-transform: uppercase;
+    outline: 0;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    margin: 0 0 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .student-but-add {
+    font-family: Arial;
+
+    text-transform: uppercase;
+    outline: 0;
+    background: #1eb85e;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    margin: 0 0 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .student-but-del {
+    font-family: Arial;
+
+    text-transform: uppercase;
+    outline: 0;
+    background: #8a1a23;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    margin: 0 0 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+  }
+.form .message {
+    font-family: Arial;
+
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+    font-family: Arial;
+
+  color: #008080;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+body {
+  background: #008080; /* fallback for old browsers */
+  background: #D8BFD8;
+  background: linear-gradient(90deg, #70b8da 0%, #E6E6FA 50%);  
+}

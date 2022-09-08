@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script>
+        function add(){
+            var table = document.getElementById("myTable");
+            var name=document.getElementById("name").value;
+            var roll=document.getElementById("roll").value;
+            if(name==''||roll==''){
+                alert("please fill details");
+            }else{
+                var row = table.insertRow();
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            
+            cell1.innerHTML =name;
+            cell2.innerHTML = roll;
+            document.getElementById("name").value='';
+            document.getElementById("roll").value='';
+            }
+            
+        }
+        function remove(){
+            var table = document.getElementById("myTable");
+            var row = table.getElementsByTagName('tr').length;
+           
+            if(row>1){
+                table.deleteRow(row-1);
+            }else{
+                alert("No rows present");
+            }
+            
+            
+        }
+    </script>  
+    <h1><u>Welcome! Welcome! Welcome! Enter Student Records</u></h1>
+    <div class="student-page">
+        <div class="students-record-form" >
+            
+          
+            <table>
+                <form class="student-form"></form>
+                <tr><td><input type="text" class="student-det" id="name" placeholder="NAME"/></td>
+                    <td><input type="text" class="student-det" id="roll" placeholder="ROLL NUMBER"/></td>
+                    <td> <button class="student-but student-but-add" onclick="add()">Add new</button></td>
+                    <td> <button class="student-but student-but-del" onclick="remove()">Delete</button></td></tr>
+                </form>
+            </table>
+            
+         
+          
+        </div>
+        <div class="newdiv">
+            <table id="myTable" class="record_table">
+                
+                <tr><th>Name</th><th>Roll No</th></tr>
+                </form>
+            </table>
+        </div>
+      </div>
+</body>
+</html></html>
